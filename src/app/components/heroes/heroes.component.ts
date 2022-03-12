@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from 'src/app/models/hero'; // importa la classe hero contenuta nell'hero.ts
 
-@Component({
-  selector: 'app-heroes',
-  templateUrl: './heroes.component.html',
-  styleUrls: ['./heroes.component.scss']
+@Component({ // specifica che al tag app-heroes corrisponde il file heroes.component.html
+  selector: 'app-heroes', // al tag app-heroes
+  templateUrl: './heroes.component.html', // collega heroes.component.html 
+  styleUrls: ['./heroes.component.scss'] // e heroes.component.css
 })
 export class HeroesComponent implements OnInit {
-  hero: string ='Windstorm';
+  hero: Hero = {
+    id:1,
+    name: 'Windstorm'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
