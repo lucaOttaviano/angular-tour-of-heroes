@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HEROES } from 'src/app/mock-data/mock-heroes';
 import { Hero } from 'src/app/models/hero'; // importa la classe hero contenuta nell'hero.ts
 
 @Component({ // specifica che al tag app-heroes corrisponde il file heroes.component.html
@@ -7,10 +8,7 @@ import { Hero } from 'src/app/models/hero'; // importa la classe hero contenuta 
   styleUrls: ['./heroes.component.scss'] // e heroes.component.css
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id:1,
-    name: 'Windstorm'
-  }
+  heroes: Hero[] = HEROES;
 
   constructor() { }
 
