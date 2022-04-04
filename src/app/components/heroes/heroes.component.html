@@ -2,12 +2,8 @@
 <ul class="heroes">
     <!-- per ogni hero di heroes -->
     <li *ngFor="let hero of heroes">
-        <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)" type="button" (click)="onSelect(hero)">
-            <span class="badge">{{hero.id}}</span>
-            <span class="name">{{hero.name}}</span>
-        </button>
+        <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
     </li>
 </ul>
-
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
-<!--salvo selected hero nella variabile [hero] e la importo nell'hero-detail component-->

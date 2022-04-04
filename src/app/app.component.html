@@ -1,3 +1,9 @@
 <h1>{{title}}</h1>
+<nav>
+    <!-- richiama il componente heroes -->
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
 <!-- il tag sotto si rifà a heroes.components.html grazie al collegamento con quest'ultimo effettuato nel file heroes.components.ts -->
-<app-heroes></app-heroes>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

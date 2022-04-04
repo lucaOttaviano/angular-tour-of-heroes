@@ -29,18 +29,18 @@
             background-color: #525252;
             color: #fafafa;
         }
-        &.selected {
-            background-color: black;
-            color: white;
-            &:hover {
-                background-color: #505050;
-                color: white;
-            }
-            &:active {
-                background-color: black;
-                color: white;
-            }
-        }
+        // &.selected {
+        //     background-color: black;
+        //     color: white;
+        //     &:hover {
+        //         background-color: #505050;
+        //         color: white;
+        //     }
+        //     &:active {
+        //         background-color: black;
+        //         color: white;
+        //     }
+        // }
     }
     .badge {
         display: inline-block;
